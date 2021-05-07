@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDO List Page</title>
+	<link rel="stylesheet" href="G:/FSD/bootstrap4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/tableStyle.css">
+	<script type="text/javascript" src="../Scripts/TaskFunctions.js"></script>
+	<style type="text/css">
+		body
+		{
+			background-image: url('../img/img2.jpg');
+			background-color: #ffccff;
+			/*background-size: cover;*/
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron"style="background-color:#ccfff5">
+			<center><h1 class="myFont1">User Desk </h1></center>
+			<button class="btn btn-success" onclick="window.open('signIn.html','_self')">SignOut</button>
+			<center><h4 class="myFont1">Task List </h4></center>
+			<button class="btn btn-success" onclick="window.open('addTaskData.html','_self')">Add Task</button>
+			<button class="btn btn-success" onclick="showUserTask()">Show Task/s</button><br>
+			<center><span id="un1"></span></center>
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbotron" style="background-color:#ffccff">
+			<div id="out1"></div>
+	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

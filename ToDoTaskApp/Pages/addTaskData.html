@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../CSS/tableStyle.css">
+	<script type="text/javascript" src="../Scripts/TaskFunctions.js"></script>
+	<style type="text/css">
+	body
+	{
+		background-image: url('../img/back2.jpg');
+		/*background-size: cover;*/
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron"style="background-color:#ccfff5;">
+			<pre><button type="button" class="btn btn-info btn-lg" onclick="window.open('signIn.html','_self')">LogOut</button>			<span style="font-size:20px"id="un"></span></pre>
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbotron" style="background-color:#ffccff">
+			<br><p class="myFont1" style="text-align: center;font-size: 2vw">Register Your Task </p>
+			<label style="font-size:20px">Task : </label><br>
+			<input id="taskname" type="text" class="form-control">
+			<label style="font-size:20px">Task Description : </label><br>
+			<textarea id="taskdata" style="width: 100%"></textarea>
+			<center>
+				<button id="adtsk" type="button" class="btn btn-info btn-lg" onclick="addTask()">Add Task</button>
+				<button id="shtsk" type="button" class="btn btn-info btn-lg" onclick="userTask()">Show Task/s</button></center>
+		</div>
+	</div>
+<script type="text/javascript">
+	var u=JSON.parse(localStorage.getItem("CurrentUser"));
+	document.getElementById("un").innerHTML="Welcome :"+u.Email;
+</script>
+</body>
+</html>

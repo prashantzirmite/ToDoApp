@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../CSS/tableStyle.css">
+	<script type="text/javascript" src="../Scripts/admin.js"></script>
+	<style type="text/css">
+		body
+		{
+			background-image: url('../img/Back1.jpg');
+			background-repeat: repeat;
+			background-position: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron"style="background-color:#ccfff5">
+			<center><h1 class="myFont1">Admin Desk</h1></center>
+			
+			<button class="btn btn-success" onclick="window.open('signIn.html','_self')">SignOut</button>
+
+			<button class="btn btn-success" onclick="showUsers()">List of Users</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbotron" style="background-color:#ffccff">
+			<p><button id="adtsk" type="button" class="btn btn-info" onclick="generateReport()">Report</button> <- Generate Report</p>
+			<div id="out">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

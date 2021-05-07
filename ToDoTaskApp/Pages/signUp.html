@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="G:/FSD/bootstrap4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/tableStyle.css">
+	<script type="text/javascript" src="../Scripts/signUp.js"></script>
+<style type="text/css">
+	body{
+		background-image: url(../img/signup1.png),url(../img/back2.jpg);
+		background-position: right bottom, left top;
+ 		background-repeat: no-repeat, repeat;
+ 		/*opacity: 0.4,0.4,0.4;*/
+	}
+</style>
+</head>
+<body>
+
+<div id="top1" class="bg bg-warning"> Sign Up </div>
+<!-- <h1 >Fruit Survey</h1> -->
+
+<form id="infosup" action="" target="_self" method="post" onsubmit="validateUser()">
+	<!-- <input class="txtin" type="text" id="fname" required> -->
+	<table id="outer">
+		<tr>
+			<th class="lc"><a role="button" class="btn btn-info" href="signIn.html">Sign In</a></th>
+			<!-- <th class="lc"><input id="sin" type="button" value="Sign In"></th> -->
+			<th class="lr">sign in if you already have an account</th> 
+		</tr>
+		<tr><td colspan="2">Fill information to SignUp</td></tr>
+		<tr>	
+			<td class="lc">First Name:</td>
+			<td class="lr"><input class="txtin" type="text" id="fname" required>	</td></tr>
+		<tr>
+			<td class="lc">Last Name:</td>
+			<td class="lr"><input class="txtin" type="text" id="lname" required>	</td></tr>
+		<tr>
+			<td class="lc">Email:</td>
+			<td class="lr"><input class="txtin" type="email" id="mail" required>	</td></tr>
+		<tr>
+			<td class="lc">Date of Birth :</td>
+			<td class="lr"><input  type="date" id="dob" required>	</td></tr>
+		<tr>
+			<td class="lc">Passward :</td>
+			<td class="lr"><input type="password" id="pass" required>	</td></tr>
+		<tr>
+			<td class="lc">Confirm Password :</td>
+			<td class="lr"><input type="password" id="cpass" required>	</td></tr>
+		<tr>
+			<!-- <td  colspan="2"><input type="submit" class="btn btn-primary" name="signup"></td></tr> -->
+			<td  colspan="2"><input type="submit" class="btn btn-primary" value="SignUp" ></td></tr>
+</table>
+
+</form>
+</body>
+</html>
